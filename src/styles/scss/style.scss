@@ -1,0 +1,58 @@
+@import "compass/css3";
+@import "compass/reset";
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Domine|Montserrat');
+@import url("../../../node_modules/font-awesome/css/font-awesome.css");
+@import "../../../node_modules/slick-carousel/slick/slick";
+@import "../../../node_modules/slick-carousel/slick/slick-theme";
+@import "../../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/common-styles";
+
+@import "utilities/backgrounds";
+@import "utilities/paddings";
+@import "utilities/flex";
+@import "utilities/margins";
+
+@import "components/welcome-block";
+@import "components/sliders";
+@import "components/navbars";
+@import "components/buttons";
+@import "components/jumbotron";
+@import "components/titles";
+@import "components/texts";
+@import "components/img-block";
+@import "components/icons-cards";
+@import "components/cards";
+@import "components/input";
+@import "components/soc-media-list";
+@import "components/error-card";
+@import "components/video-block";
+@import "components/masonry";
+@import "components/pagination";
+@import "components/comments-card";
+@import "components/jobs-list";
+
+
+@import "layout/sections/sections-style";
+@import "layout/header";
+@import "layout/footer";
+
+@import "media/media-header";
+@import "media/media-footer";
+@import "media/sections/media-features";
+@import "media/sections/media-project";
+@import "media/sections/media-services";
+@import "media/sections/media-blog";
+@import "media/sections/media-quick-contact";
+@import "media/sections/media-error";
+@import "media/sections/media-about-content";
+@import "media/sections/media-masonry";
+@import "media/sections/media-blog-masonry";
+@import "media/sections/media-careers";
+@import "media/sections/media-contact-us";
+@import "media/sections/media-industry";
+@import "media/sections/media-testimonials";

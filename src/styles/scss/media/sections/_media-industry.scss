@@ -1,0 +1,22 @@
+@media (max-width: 640px){
+  .industry-card-list{
+    li{
+     flex-direction: column;
+      width: 260px;
+      button{
+        padding: 5px 10px;
+        margin-bottom: 30px;
+      }
+      p{
+        font-size: .8125rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .industry-card-list{
+    flex-direction: column;
+    align-items: center;
+  }
+}

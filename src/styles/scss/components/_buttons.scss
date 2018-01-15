@@ -1,0 +1,151 @@
+.button{
+  background-color: transparent;
+  font-family: $font-btn;
+  text-transform: uppercase;
+  color: $light-text;
+  font-size: .8125rem;
+  border: none;
+  cursor: pointer;
+  @include border-radius(20px);
+  padding: 15px 20px;
+  &:hover{
+    -moz-transition: all .75s ease-out;
+    -o-transition: all .75s ease-out;
+    -webkit-transition: all .75s ease-out;
+    background-color: $btn-hover;
+    color: $light-text;
+  }
+  &-message{
+    background-color: $header-icon-bg;
+    margin-left: 10px;
+    padding: 5px 10px;
+    @include border-radius(50%);
+    &:before{
+      font-family: FontAwesome;
+      content: "\f2b7";
+    }
+    &:hover{
+      background-color: $btn-bg;
+    }
+  }
+  &-brand{
+    background-color: $btn-bg;
+    padding: 15px 25px;
+  }
+  &-boost{
+    background-color: $btn-bg;
+  }
+  &-project{
+    border: 1px solid $border-btn-color;
+    color: $light-text;
+    position: absolute;
+    top: 20px;
+    margin-left: 15px;
+    padding: 10px 25px;
+  }
+  &-mob{
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+    border: none;
+    &:before{
+      font-family: FontAwesome;
+      content: "\f0c9";
+      display: block;
+      font-size: 2rem;
+      color: $nav-block-bg;
+      cursor: pointer;
+    }
+  }
+  &-youtube{
+    padding: 0;
+    left: 45%;
+    margin-top: 50px;
+   &:before{
+     content: "";
+     background: url(../../images/play_icon.png) no-repeat;
+     width: 50px;
+     height: 50px;
+     display: block;
+   }
+    &:hover{
+      background-color: transparent;
+      padding: 1px;
+    }
+  }
+  &-video{
+    &:before{
+      font-family: FontAwesome;
+      content: "\f04b";
+      font-size: 1.25rem;
+    }
+    @include border-radius(50%);
+    padding: 20px 25px;
+    background-color: #ff2727;
+    border: 5px solid #fff;
+  }
+
+  &-masonry{
+    border-radius: 0;
+    background-color: $btn-bg;
+    padding: 5px 15px;
+    &:after{
+      font-family: FontAwesome;
+      content: "\ ";
+      color: #000;
+      font-size: 1rem;
+      margin-left: 15px;
+    }
+    &-quote{
+      &:after{
+        content: "\f10d";
+      }
+    }
+    &-picture{
+      &:after{
+        content: "\f03e";
+      }
+    }
+    &-link{
+      &:after{
+        content: "\f0c1";
+      }
+    }
+    &-youtoube{
+      &:after{
+        content: "\f16a";
+      }
+    }
+  }
+}
+
+.jobs-btn-hover{
+  &:hover{
+    background-color: #fff;
+    border: 2px solid $btn-bg;
+    color: #000;
+  }
+}
+
+.btn-js{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: #838b8c;
+  &:hover{
+    color: $btn-hover;
+  }
+  &:before{
+    font-family: FontAwesome;
+    content: "\f067";
+    font-size: 1.5rem;
+  }
+}
+
+.plus-minus-icon{
+  &:before{
+    font-family: FontAwesome;
+    content: "\f068";
+    font-size: 1.5rem;
+  }
+}

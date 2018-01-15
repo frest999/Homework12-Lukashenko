@@ -1,0 +1,73 @@
+@media (min-width: 991px) and (max-width: 1190px ) {
+  .input-consultation{
+    flex-direction: column;
+    input{
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1170px){
+  .about-cards{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    li{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+
+@media (max-width: 990px){
+  .consultation-block{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .input-consultation{
+    flex-direction: column;
+    input{
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+  .video-block{
+    button{
+      left: 45%;
+    }
+  }
+  .video-block-img{
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px){
+  .consultation-block{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 500px){
+  .video-block{
+    button{
+      left: 40%;
+    }
+  }
+  .button-video{
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 330px){
+  .video-block{
+    button{
+      left: 35%;
+      top: 35%;
+    }
+  }
+}

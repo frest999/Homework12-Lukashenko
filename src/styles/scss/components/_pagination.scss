@@ -1,0 +1,22 @@
+.masonry-pagination{
+  justify-content: center;
+  li{
+    margin-right: 20px;
+  }
+  .page-link{
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 20px 25px;
+    color: #000;
+    border: 1px solid $pagination-border;
+    &:hover{
+      background-color: $btn-hover;
+    }
+  }
+  .page-item:first-child .page-link{
+    border-radius: 50%;
+  }
+  .page-item:last-child .page-link{
+    border-radius: 50%;
+  }
+}

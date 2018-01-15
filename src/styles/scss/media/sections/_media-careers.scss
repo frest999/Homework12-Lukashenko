@@ -1,0 +1,47 @@
+@media (max-width: 1180px){
+  .resume-form{
+    input{
+      &:nth-child(3n){
+        margin-right: 20px;
+      }
+    }
+    textarea{
+      width: 66%;
+    }
+    button{
+      display: block;
+    }
+  }
+}
+
+
+@media (max-width: 880px){
+  .jobs-list{
+    li{
+      margin-bottom: 100px;
+      border: 0;
+    }
+  }
+  .jobs-list-info{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 824px){
+ .resume-block{
+   display: block;
+   margin-bottom: 30px;
+ }
+  .resume-form{
+    position: relative;
+    .attach-text{
+      display: block;
+      position: absolute;
+      top: 285px;
+      left: 95px;
+      &:after{
+        display: none;
+      }
+    }
+  }
+}

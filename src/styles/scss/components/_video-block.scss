@@ -1,0 +1,18 @@
+.video-block-img{
+  width: 460px;
+  max-width: 100%;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video-block{
+  position: relative;
+  button{
+    position: absolute;
+    top: 38%;
+    left: 40%;
+  }
+}

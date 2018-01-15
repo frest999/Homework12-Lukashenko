@@ -1,0 +1,101 @@
+.features-cards{
+  li{
+    width: 480px;
+    max-width: 100%;
+    margin-bottom: 50px;
+    &:before{
+      content: "";
+      width: 45px;
+      height: 80px;
+    }
+
+    &:nth-child(2n){
+     text-align: left;
+     &:before{
+      content: "";
+      float: left;
+      margin-right: 30px;
+      }
+    }
+    &:nth-child(2n+1){
+     text-align: right;
+     &:before{
+       content: "";
+      float: right;
+      margin-left: 30px;
+      }
+    }
+  }
+}
+
+@each $icon in $icons-card-list{
+  $j: $j+1;
+.features-cards li:nth-last-child(#{$j}){
+  &:before {
+    content: '';
+    background: url("../../images/features-icons/#{$icon}.png") no-repeat;
+    display: block;
+    }
+  }
+}
+
+.services-block{
+  h4{
+    margin-bottom: 20px;
+  }
+  li{
+    width: 360px;
+    max-width: 100%;
+  }
+}
+
+@each $icon in $icons-services-list{
+  $s: $s+1;
+  .services-block li:nth-last-child(#{$s}){
+    &:before {
+      content: '';
+      background: url("../../images/services-icons/#{$icon}.png") no-repeat;
+      width: 45px;
+      height: 80px;
+      display: block;
+    }
+  }
+}
+
+.contact-list{
+  li{
+    width: 360px;
+    max-width: 100%;
+    margin-right: 30px;
+    border: 1px solid #e1eaec;
+    padding: 40px 30px 20px 30px;
+    &:before{
+      content: "";
+      margin-right: 30px;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    a{
+      color: #000;
+      &:hover{
+        color: $links-hover;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@each $icon in $icons-contact{
+  $c: $c+1;
+  .contact-list li:nth-last-child(#{$c}){
+    &:before {
+      content: '';
+      background: url("../../images/contact-icons/#{$icon}.png") no-repeat;
+      width: 65px;
+      height: 65px;
+      display: block;
+      float: left;
+    }
+  }
+}

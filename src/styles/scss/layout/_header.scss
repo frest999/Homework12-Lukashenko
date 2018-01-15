@@ -1,0 +1,18 @@
+.short-display-slide{
+  height: 300px;
+}
+
+.mini-header{
+  height: 300px;
+  .header-slider{
+    .slick-dots{
+      display: none;
+    }
+  }
+  .header-slide-1{
+    height: 300px;
+  }
+  .jumbotron-welcome{
+    margin-top: 130px;
+  }
+}

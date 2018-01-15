@@ -1,0 +1,129 @@
+.soc-media-list{
+  li{
+    margin-right: 40px;
+    &:last-child{
+      margin-right: 0;
+    }
+    a{
+      text-transform: uppercase;
+      font-family: $font-title-nav;
+      font-size: $soc-media-size;
+      font-weight: bold;
+      &:hover{
+        -moz-transition: all .75s ease-out;
+        -o-transition: all .75s ease-out;
+        -webkit-transition: all .75s ease-out;
+        opacity: 0.5;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@each $color in $soc-color-list{
+  $soc: $soc + 1;
+  .soc-media-list li:nth-last-child(#{$soc}){
+    a{
+      color: #{$color};
+    }
+  }
+}
+
+.soc-media-share{
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 30px;
+  border: 1px solid #d2dbdd;
+  position: relative;
+  margin-bottom: 50px;
+  @include border-radius(50px);
+  li{
+    a{
+      color: #838b8c;
+      &:before{
+        font-family: FontAwesome;
+        font-size: 1rem;
+      }
+      &:hover{
+        text-decoration: none;
+        color: #00b5da;
+      }
+    }
+    &:last-child{
+      position: absolute;
+      background-color: $share-icon-bg;
+      padding: 15px 20px;
+      top: -5px;
+      right: -20px;
+      @include border-radius(50%);
+      a{
+        color: $light-text;
+        &:hover{
+          color: #00b5da;
+        }
+      }
+    }
+  }
+}
+
+
+.facebook-share{
+  &:before{
+    content: "\f09a";
+  }
+}
+
+.twitter-share{
+  &:before{
+    content: "\f099";
+  }
+}
+
+.google-share{
+  &:before{
+    content: "\f0d5";
+  }
+}
+
+.share{
+  &:before{
+    content: "\f1e0";
+  }
+}
+
+.contact-us-list{
+  width: 270px;
+  max-width: 100%;
+  li{
+    &:before{
+      font-family: FontAwesome;
+      color: $location-icon-color;
+      font-size: 2rem;
+      display: block;
+      float: left;
+      height: 120px;
+      margin-right: 20px;
+    }
+  }
+  a{
+    @extend .text;
+    color: $dark-text;
+  }
+}
+
+.contact-phone{
+  &:before{
+    content: "\f098";
+  }
+}
+.contact-email{
+  &:before{
+    content: "\f2b7";
+  }
+}
+.contact-address{
+  &:before{
+    content: "\f041";
+  }
+}

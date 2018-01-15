@@ -1,0 +1,184 @@
+.light-text{
+  color: $light-text;
+}
+
+.dark-text{
+  color: $dark-text;
+}
+
+.text{
+  font-family: $font-text;
+  line-height: 1.8;
+  font-size: $text-block-size;
+  &-boost{
+    font-size: $boost-text-size;
+  }
+  &-footer{
+    color: $footer-text-color;
+  }
+  &-data{
+    &:before{
+      font-family: FontAwesome;
+      content: "\f017";
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+  }
+  &-related-data{
+    text-transform: uppercase;
+    font-size: .8125rem;
+  }
+  &-share{
+    padding: 0;
+    &:before{
+      font-family: FontAwesome;
+      content: "\f1e0";
+      font-size: 1rem;
+      color: $dark-text;
+    }
+    &-light{
+      &:before{
+        color: $light-text;
+      }
+    }
+  }
+  &-price{
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-family: $font-title-nav;
+  }
+}
+
+.testmin-icon{
+  width: 910px;
+  max-width: 100%;
+  margin: 0 auto;
+  &:after{
+    content: "";
+    background: url(../../images/quote_icon.png) no-repeat;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.testmin-signup{
+  text-align: center;
+  &:before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+.testmin-signup-name{
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.blog-post-text{
+  width: 935px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.blog-post-accept{
+  width: 450px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  li{
+    display: flex;
+    &:before{
+      font-family: FontAwesome;
+      content: "\f00c";
+      font-size: 1.5rem;
+      display: block;
+      margin-right: 20px;
+      color: $aceppt-icon-color;
+    }
+  }
+}
+
+.blog-sm-text{
+  width: 555px;
+  max-width: 100%;
+  margin-left: 40px;
+}
+
+.data-color{
+  color: $text-data-color;
+}
+
+.location-text{
+  text-transform: uppercase;
+  color: #000;
+  font-family: $font-title-nav;
+  font-weight: bold;
+  &:before{
+    font-family: FontAwesome;
+    content: "\f041";
+    color: $location-icon-color;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+}
+
+.price-period-text{
+  font-size: .8125rem;
+}
+
+.text-accept{
+  &:before{
+    font-family: FontAwesome;
+    content: "\f00c";
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 0;
+    float: left;
+    margin-right: 20px;
+    color: #f6961b;
+    margin-top: 15px;
+  }
+}
+
+.text-js{
+  display: none;
+}
+.text-js-active{
+  display: block;
+  position: absolute;
+}
+
+.testimonials-text-icon{
+  &:before{
+    content: "";
+    font-size: 1rem;
+    background: url(../../images/sm_quote.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 100%;
+  }
+}
+
+.testimonials-name, .testimonials-text{
+  font-size: $testimonials-name;
+  font-family: $font-title-nav;
+  line-height: 2;
+}
+
+.testimonials-post{
+  font-size: $testimonials-post;
+  font-family: $font-title-nav;
+}

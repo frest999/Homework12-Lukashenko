@@ -1,0 +1,22 @@
+@media (max-width: 1160px ){
+  .services-block{
+    justify-content: center;
+    align-items: center;
+    li{
+      margin-right: 30px;
+      &:nth-child(2n){
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px ){
+  .services-block{
+    flex-direction: column;
+    li{
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}

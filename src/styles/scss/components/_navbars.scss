@@ -1,0 +1,76 @@
+.top-header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  align-items: baseline;
+}
+
+.main-nav{
+  li{
+    margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+    a, .phone-l{
+      text-transform: uppercase;
+      color: $light-text;
+      font-family: $font-title-nav;
+      font-size: $header-nav-size;
+    &:hover{
+      text-decoration: none;
+      color: $nav-hover-color;
+      -moz-transition: all .75s ease-out;
+      -o-transition: all .75s ease-out;
+      -webkit-transition: all .75s ease-out;
+    }
+    }
+  }
+}
+
+.phone-link{
+  color: $light-text;
+  &:hover{
+    text-decoration: none;
+    color: $header-icon-bg;
+    -moz-transition: all .75s ease-out;
+    -o-transition: all .75s ease-out;
+    -webkit-transition: all .75s ease-out;
+  }
+  &:before{
+    font-family: FontAwesome;
+    content: "\f095";
+    color: $header-icon-bg;
+    margin-right: 10px;
+  }
+}
+.active-page{
+  color: $nav-hover-color!important;
+}
+
+.mobile-menu{
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+  li{
+    padding: 10px 30px;
+    border-bottom: 1px solid #2a2f34;
+  }
+  a{
+    color: $light-text;
+    text-transform: uppercase;
+    &:hover{
+      text-decoration: none;
+      color: $mobile-hover;
+    }
+  }
+}
+
+.active-mob{
+  display: flex;
+}

@@ -1,0 +1,228 @@
+.header-slider{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-slider{
+  .slick-prev, .slick-next {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.full-display-slide{
+  height: 100vh;
+}
+
+.header-slide-1{
+  @include background(linear-gradient(to right, rgba(12, 182, 226, .4) 50%, rgba(255, 172, 86, .4) 100%),
+  url("../../images/layer36.png") no-repeat 50% 0);
+  background-size: cover;
+}
+
+.header-slide-2{
+  @include background(linear-gradient(to right, rgba(12, 182, 226, .4) 50%, rgba(255, 172, 86, .4) 100%),
+          url("../../images/students.png") no-repeat 50% 0);
+  background-size: cover;
+}
+
+.header-slide-3{
+  @include background(linear-gradient(to right, rgba(12, 182, 226, .4) 50%, rgba(255, 172, 86, .4) 100%),
+          url("../../images/peoples.png") no-repeat 50% 0);
+  background-size: cover;
+  background-position: top center;
+}
+
+.slick-dots{
+  li{
+    margin: 60px 2px;
+    button{
+      &:before{
+        color: #fff;
+        font-size: 20px;
+        opacity: 1;
+        font-family: FontAwesome;
+        content: "\f10c";
+      }
+    }
+  }
+}
+
+.slick-dots li.slick-active button:before{
+  content: "\f192";
+  color: $slider-dots-bg;
+}
+
+.about-us-slider{
+  width: 90%;
+  li{
+    margin-right: 60px;
+  }
+}
+
+
+.slick-prev, .slick-next{
+  &:before{
+    font-family: FontAwesome;
+    color: #4b5257;
+    line-height: 0;
+    font-size: 2.1rem;
+  }
+}
+
+.slick-prev {
+  &:before {
+    content: "\f0a8";
+  }
+}
+
+.slick-next{
+  &:before {
+    content: "\f0a9";
+  }
+}
+
+
+
+.slider-project {
+  .slick-prev, .slick-next {
+    &:before {
+      display: none;
+    }
+  }
+  .slick-dots {
+    width: 100%;
+    height: 31%;
+    text-align: right;
+    padding-right: 30px;
+    transform: translateY(-100%);
+  }
+}
+
+.testimonials-slider{
+  .slick-prev, .slick-next {
+    &:before {
+      display: none;
+    }
+  }
+  .slick-dots{
+    top: -150px;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+    .slick-active{
+      button{
+        &:before{
+          opacity: 1;
+        }
+      }
+    }
+    li{
+      margin: 60px 0;
+      button{
+        &:before{
+          opacity: 0.5;
+          content: "";
+          display: block;
+          width: 100px;
+          height: 100px;
+        }
+      }
+      &:first-child{
+        button{
+          &:before{
+            background: url(../../images/testim1.png) no-repeat ;
+          }
+        }
+      }
+      &:last-child{
+        button{
+          &:before{
+            background: url(../../images/testim3.png) no-repeat ;
+          }
+        }
+      }
+      &:nth-child(2){
+        margin-left: 50px;
+        margin-right: 60px;
+        button{
+          &:before{
+            background: url(../../images/testim2.png) no-repeat ;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.testimonials-big-slider{
+  width: 550px;
+  max-width: 100%;
+  margin: 0 50%;
+  margin-top: 5%;
+  .slick-prev, .slick-next {
+    &:before {
+      display: none;
+    }
+  }
+  .slick-dots{
+    margin-bottom: -120px;
+    .slick-active{
+      button{
+        &:before{
+          box-shadow: 0 0 90px rgba(255,172,85,0.8);
+          border-radius: 50%;
+          height: 102px;
+          width: 102px;
+          border: 5px solid #ffac55;
+          opacity: 1;
+        }
+      }
+    }
+    li{
+      margin: 60px 0;
+      margin-right: 100px;
+      button{
+        &:before{
+          content: "";
+          display: block;
+          width: 100px;
+          height: 100px;
+        }
+      }
+      &:first-child{
+        button{
+          &:before{
+            background: url(../../images/sm-icon-1.png) no-repeat ;
+          }
+        }
+      }
+      &:last-child{
+        margin-right: 0;
+        button{
+          &:before{
+            background: url(../../images/sm-icon-4.png) no-repeat ;
+          }
+        }
+      }
+      &:nth-child(2){
+        button{
+          &:before{
+            background: url(../../images/sm-icon-2.png) no-repeat ;
+          }
+        }
+      }
+      &:nth-child(3){
+        button{
+          &:before{
+            background: url(../../images/sm-icon-3.png) no-repeat ;
+          }
+        }
+      }
+    }
+  }
+}

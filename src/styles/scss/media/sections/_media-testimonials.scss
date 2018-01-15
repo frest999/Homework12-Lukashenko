@@ -1,0 +1,16 @@
+@media (max-width: 1326px){
+  .testimonials-big-section{
+    display: none;
+  }
+}
+
+@media (max-width: 480px){
+  .happy-client-list{
+    li{
+      flex-direction: column;
+    }
+    .comments-img-block{
+      align-self: center;
+    }
+  }
+}

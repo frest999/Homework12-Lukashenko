@@ -1,0 +1,15 @@
+*{
+  outline: none !important;
+}
+
+.content{
+  width: $width-content + 80px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.text-indent{
+  text-indent: -9999px;
+  position: absolute;
+}

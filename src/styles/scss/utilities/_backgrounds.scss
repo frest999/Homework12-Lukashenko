@@ -1,0 +1,79 @@
+.header-bg{
+background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(255,255,255,0.2));
+}
+
+
+.features-section{
+  background-color: $features-bg;
+}
+
+.boost-bg{
+  background-color: $boost-bg;
+}
+
+.services-bg{
+  background-color: $services-bg;
+}
+
+.testimonials-bg{
+  background-color: $testimonials-bg;
+}
+
+.our-blog-bg{
+  background-color: $our-blog-bg;
+}
+
+.footer-bg{
+  background-color: $footer-bg;
+}
+
+.about-us-bg2{
+  background-color: #e7eff1;
+}
+.masonry-card-bg{
+  background-color: $masonry-card-bg;
+}
+
+.comments-section-bg{
+  background-color: $comments-section-bg;
+}
+
+.message-section-bg{
+  background-color: #e7eff1;
+}
+
+.comp-helps-bg{
+  background-color: $comp-help-bg;
+}
+
+.write-us-bg{
+  background-color: $write-us-bg;
+}
+
+$price-basic-bg: #ffac55;
+$price-silver-bg: #03b6e7;
+$price-gold-bg: #55bd77;
+
+.price-basic-bg{
+  background-color: $price-basic-bg;
+}
+
+.price-silver-bg{
+  background-color: $price-silver-bg;
+}
+
+.price-gold-bg{
+  background-color: $price-gold-bg;
+}
+
+.asked-bg{
+  background-color: $asked-bg;
+}
+
+.testimonials-theme-bg{
+  background: url("../../images/testmonials-theme.png") no-repeat;
+  height: 80vh;
+  background-position-x: 35%;
+  background-size: cover;
+
+}

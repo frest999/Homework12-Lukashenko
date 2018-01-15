@@ -1,0 +1,28 @@
+
+.grid-item {
+  width: 360px;
+  border: 1px solid #ededef;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  &:nth-child(3n){
+    margin-right: 0;
+  }
+  &:hover{
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+  }
+}
+.grid-item-img {
+  position: relative;
+
+  button{
+    position: absolute;
+    top: 30px;
+  }
+}
+
+.info-grid-card{
+  padding: 30px 40px 45px 35px;
+}
+
+
+

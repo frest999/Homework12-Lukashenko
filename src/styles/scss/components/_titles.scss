@@ -1,0 +1,47 @@
+.title{
+  font-family: $font-title-nav;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  &-welcome-sm{
+    font-size: $welcome-title-sm;
+    font-weight: normal;
+  }
+  &-welcome-bg{
+    font-size: $welcome-title-bg;
+  }
+  &-welcome-block{
+    font-size: $welcome-block-size;
+  }
+  &-error{
+    font-size: $error-size-title;
+    color: $error-color-title;
+    margin-right: 90px;
+  }
+  &-section{
+    font-size: $section-title-size;
+  }
+  &-cards{
+    font-size: $card-title-size;
+    text-align: inherit;
+  }
+  &-dark{
+    color: $dark-title;
+  }
+  &-date-blog{
+    font-size: $blog-date;
+    text-align: left;
+    line-height: 0;
+    text-transform: none;
+  }
+  &-quick-contact{
+    font-size: $quick-contact-size;
+    text-align: left;
+  }
+  &-small{
+    font-size: $small-title-size;
+  }
+  &-price{
+    font-size: 2.25rem;
+  }
+}

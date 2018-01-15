@@ -1,0 +1,33 @@
+@media (max-width: 1196px)  {
+  .project-block{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li{
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 510px)  {
+  .slider-project-li .project-info{
+    border: none;
+  }
+  .project-block{
+    li{
+      height: 490px;
+    }
+  }
+.slider-project .slick-dots{
+    transform: translateY(-110%);
+  }
+}
+
+@media (max-width: 420px)  {
+  .project-img-block{
+    height: 250px;
+  }
+  .slider-project .slick-dots{
+    transform: translateY(-140%);
+  }
+}

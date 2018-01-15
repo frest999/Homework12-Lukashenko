@@ -1,0 +1,28 @@
+.error-card{
+  margin-right: 100px;
+  &:before{
+    content: "";
+    background: url(../../images/icon_sad.png) no-repeat;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  button, h3{
+    align-self: flex-start;
+  }
+  p{
+    margin-bottom: 60px;
+  }
+}
+
+.title-block-error{
+  display: flex;
+  &:after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #d0e6ec;
+  }
+}

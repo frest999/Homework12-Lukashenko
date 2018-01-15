@@ -1,0 +1,26 @@
+@media (max-width: 1115px){
+  .contact-list{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li{
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 405px){
+  .contact-list{
+    li{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &:before{
+        content: "";
+        margin: 0;
+      }
+    }
+  }
+}

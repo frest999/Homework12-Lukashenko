@@ -1,0 +1,155 @@
+.project-block{
+  li{
+    height: 460px;
+  }
+}
+
+.project-info{
+  background-color: $project-first-bg;
+  padding: 40px 0 25px 20px;
+}
+
+.project-card{
+  position: relative;
+  width: 360px;
+  max-width: 100%;
+}
+
+.slider-project-li{
+  position: relative;
+  width: 750px;
+  max-width: 100%;
+  .project-info{
+    background-color: transparent;
+    border: 1px solid #dae5e8;
+    height: 160px;
+  }
+}
+
+.blog-block{
+  li{
+    height: 300px;
+    width: 50%;
+    &:nth-child(2n+1), &:nth-child(2n){
+      &:before{
+        content: "";
+        display: block;
+        height: 3px;
+        width: 100%;
+      }
+    }
+    &:nth-child(2n+1){
+      position: relative;
+      box-shadow: 0 0 70px rgba(212,216,229,1);
+      &:before{
+        background-color: $top-border-color1;
+      }
+  }
+    &:nth-child(2n){
+    .card-blog-info{
+      width: 100%;
+      padding-left: 60px;
+    }
+      &:before{
+        background-color: $top-border-color2;
+      }
+    }
+  }
+}
+
+.card-blog-info{
+  background-color: $blog-card-bg;
+  width: 365px;
+  max-width: 100%;
+  padding: 45px 40px;
+  height: 300px;
+}
+
+.about-cards{
+  li{
+    background-color: #fff;
+    width: 360px;
+    max-width: 100%;
+    text-align: center;
+    &:hover{
+      box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    }
+  }
+}
+
+.about-card-info{
+  padding: 40px 35px;
+}
+
+.related-post-block{
+  &:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e2e6e7;
+    margin-bottom: 40px;
+  }
+}
+
+.industry-card-list{
+  li{
+    width: 555px;
+    max-width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e4ecee;
+    &:hover{
+      box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    }
+  }
+}
+
+.industry-card-info{
+  width: 295px;
+  max-width: 100%;
+  padding: 50px 30px 0px 30px;
+}
+
+.plans-optional{
+  height: 190px;
+}
+
+.plans-list{
+  >li{
+    border: 1px solid #e4ecee;
+    width: 360px;
+    max-width: 100%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+
+.price-block{
+  padding: 35px 0 0 40px;
+}
+
+.price-info{
+  padding: 50px 0 0 40px;
+}
+
+.slide-text-block{
+  li{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+}
+
+.happy-client-list{
+  li{
+    width: 550px;
+    max-width: 100%;
+    display: flex;
+    margin-bottom: 90px;
+  }
+}

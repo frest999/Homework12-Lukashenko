@@ -1,0 +1,28 @@
+.top-footer{
+  li{
+    width: 135px;
+    max-width: 100%;
+    margin-right: 70px;
+    p{
+      color: $footer-text-color;
+    }
+  }
+  h4{
+    margin-bottom: 30px;
+  }
+  a{
+    color: $footer-text-color;
+  }
+}
+
+.bottom-footer{
+  &:before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #323334;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+
